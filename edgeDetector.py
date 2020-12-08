@@ -79,10 +79,12 @@ class EdgeDetector(object):
     def produceEdges(self):
         return self.convolve()
         
-        
+#can play around with the filters to see result       
 img_filter = [[5,5,5], [0,0,0], [-5, -5, -5]]
 #img_filter = [[0,0,0], [1,2,1], [0,0,0]]
-image_filepath = '/home/marla/Documents/Pictures/trees.jpg'        
+
+#specify the image_filtpath on next line
+image_filepath = ''        
 ed = EdgeDetector(image_filepath, img_filter)
 original_image = ed.getImage()
 ed.displayImage(original_image)

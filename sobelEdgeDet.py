@@ -98,7 +98,9 @@ class EdgeDetector(object):
         return self.convolve()
  
 '''
-image_filepath = '/home/marla/Documents/Pictures/trees.jpg'        
+add filepath to image to process
+
+image_filepath = ''        
 ed = EdgeDetector(image_filepath)
 original_image = ed.getImage()
 ed.displayImage(original_image)
